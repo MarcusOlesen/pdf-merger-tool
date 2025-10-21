@@ -64,4 +64,3 @@ pyinstaller --onefile --windowed --icon=icon.ico pdf_merger.py
 * `--icon=icon.ico` → adds a custom icon (optional)
 
 The generated `.exe` will appear in the `dist/` folder.
-```

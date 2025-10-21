@@ -39,7 +39,7 @@ pip install PyQt6 PyPDF2
 Clone or download this repository, then from the project folder run:
 
 ```bash
-python pdf_merger.py
+python MergePDFs.py
 ```
 
 The app will launch with a simple window:
@@ -56,11 +56,12 @@ If you want to use it without opening a terminal each time, you can package it a
 
 ```bash
 pip install pyinstaller
-pyinstaller --onefile --windowed --icon=icon.ico pdf_merger.py
+pyinstaller --onefile --windowed --icon=icon.ico --add-data "icon.ico;." MergePDFs.py
 ```
 
 * `--onefile` → bundles everything into one file
 * `--windowed` → hides the terminal window
-* `--icon=icon.ico` → adds a custom icon (optional)
+* `--icon=icon.ico` → adds a custom icon
+* * `--add-data "icon.ico;."` → packages custom icon with `.exe`
 
 The generated `.exe` will appear in the `dist/` folder.

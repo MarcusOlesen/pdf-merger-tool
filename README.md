@@ -62,6 +62,6 @@ pyinstaller --onefile --windowed --icon=icon.ico --add-data "icon.ico;." MergePD
 * `--onefile` → bundles everything into one file
 * `--windowed` → hides the terminal window
 * `--icon=icon.ico` → adds a custom icon
-* * `--add-data "icon.ico;."` → packages custom icon with `.exe`
+* `--add-data "icon.ico;."` → packages custom icon with `.exe`
 
 The generated `.exe` will appear in the `dist/` folder.
